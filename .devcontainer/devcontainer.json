@@ -1,0 +1,15 @@
+{
+  "name": "Typescript + Node",
+
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-trixie",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["biomejs.biome", "ms-vscode.vscode-typescript-next"]
+    }
+  },
+
+  "postCreateCommand": "npm ci",
+
+  "remoteUser": "node"
+}

@@ -17,5 +17,7 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
 
-  "js/ts.tsdk.path": "node_modules/typescript/lib"
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+
+  "biome.lsp.bin": "node_modules/.bin/biome"
 }

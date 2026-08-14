@@ -19,7 +19,7 @@
     "check": "biome check . && tsc --noEmit",
     "check:fix": "biome check . --write . && tsc --noEmit",
     "container:build": "docker build -t ts-node-starter .",
-    "container:run": "docker run --rm -p 3000:3000 ts-node-starter"
+    "container:run": "docker run --rm -d -p 3000:3000 ts-node-starter"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.8",

@@ -1,8 +1,5 @@
 import { createServer } from 'node:http';
-
-function greet(name: string): string {
-  return `hello, ${name}!`;
-}
+import { greet } from './greet.ts';
 
 const port = Number(process.env.PORT ?? 3000);
 

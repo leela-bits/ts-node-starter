@@ -9,15 +9,22 @@
     "node": ">=24"
   },
   "scripts": {
-    "dev": "node --watch src/index.ts",
+    "dev": "node src/index.ts",
+    "dev:watch": "node --watch src/index.ts",
     "start": "node src/index.ts",
+
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "test:coverage": "node --test --experimental-test-coverage",
+
     "typecheck": "tsc --noEmit",
     "lint": "biome lint .",
     "lint:fix": "biome lint . --write .",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "check": "biome check . && tsc --noEmit",
+    "check": "biome check . && tsc --noEmit && npm test",
     "check:fix": "biome check . --write . && tsc --noEmit",
+
     "container:build": "docker build -t ts-node-starter .",
     "container:run": "docker run --rm -d -p 3000:3000 ts-node-starter"
   },
